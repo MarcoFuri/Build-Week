@@ -164,7 +164,7 @@ h1 {
 
 /* pagina feedback */
 
-#stelline div {
+#stelline div svg {
   display: inline-block;
   color: #0b103c;
   width: 4em;
