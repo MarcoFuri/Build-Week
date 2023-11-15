@@ -25,7 +25,7 @@ header>img {
   padding-left: 6.5rem;
 }
 
-h1 {
+#containerWelcome h1 {
   font-family: 'Outfit', sans-serif;
   font-weight: 400;
   font-size: 4rem;
@@ -108,4 +108,199 @@ h1 {
 #footerWelcome button:hover {
   cursor: pointer;
   background-color: #00FFFF;
+}
+
+
+
+/* pagina question  */
+
+#containerQuestion {
+  margin-top: 5rem;
+  width: 80%;
+  padding-left: 6.5rem;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+#spanQuestion {
+  font-weight: 700;
+}
+
+#contenutoQuestion1 {
+  margin-top: 3.5rem;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+#contenutoQuestion1 button:first-child {
+  margin-right: 2rem;
+}
+
+#contenutoQuestion2 {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+#contenutoQuestion2 button:first-child {
+  margin-right: 2rem;
+}
+
+#footerQuestion {
+  margin-top: 2.5rem;
+}
+
+/#footerQuestion h3 {
+  font-weight: ;
+}/
+
+
+
+/* pagina feedback */
+
+#stelline div {
+  display: inline-block;
+  color: #0b103c;
+  width: 4em;
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+#containerFeedback {
+  text-align: center;
+ 
+}
+
+#footerFeedback button {
+  box-sizing: content-box;
+  width: 10rem;
+  height: 3rem;
+  text-align: center;
+  color: black;
+  border: 0;
+  background-color: #00ffffed;
+  box-shadow: 0px 2px 20px 2px#00FFFF;
+  margin-top: 3rem;
+  font-weight: 900;
+  font-size: 1.1rem;
+}
+
+#footerWelcome button:hover {
+  cursor: pointer;
+  background-color: #00ffff;
+
+}
+
+.selected{
+    color: #00FFFF;
+}
+
+#containerFeedback h1 {
+    font-weight: 600;
+    font-size: 5rem;
+    font-family: "Outfit", sans-serif;
+    margin-top: 7rem;
+}
+
+#containerFeedback h2 {
+    font-weight: 400;
+    font-size: 2rem;
+    font-family: "Outfit", sans-serif;
+
+}
+
+#feedbackInputText [type="text"]{
+    appearance: none;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid #d20094;
+    width: 70%;
+    padding: 0.5rem 0 0.5rem 2rem;
+    font-size: 1.3rem;
+    color: #ebebeb;
+}
+
+
+
+/* pagina Results */
+
+#containerResults {
+  text-align: center;
+  line-height: 0.5rem;
+  font-family: 'Outfit', sans-serif;
+}
+
+#containerResults h1 {
+  font-weight: 600;
+}
+
+#containerResults p {
+  font-weight: 400;
+  font-size: 0.9rem;
+  letter-spacing: 1.1px;
+}
+
+#schemaResults div {
+  display: inline-block;
+}
+
+#graficoResults {
+  width: 160px;
+  line-height: 0.8rem;
+  border: 38px solid #00FFFF;
+  border-radius: 50%;
+  height: 180px;
+  padding: 2.5rem 2rem 0 2rem;
+  margin: 3rem 6rem;
+}
+
+#rightAnswer, #wrongAnswer {
+  line-height: 0.1rem;
+  text-align: start;
+}
+
+#rightAnswer h3, #wrongAnswer h3 {
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 1.6px;
+}
+
+#rightAnswer h2, #wrongAnswer h2 {
+  font-size: 2rem;
+}
+
+#rightAnswer h6, #wrongAnswer h6 {
+  margin: 0;
+  font-weight: 300;
+}
+
+#graficoResults h5 span {
+  color: #00FFFF;
+}
+
+#graficoResults h6 {
+  font-weight: 400;
+  font-size: 0.6rem;
+  color: rgba(255, 255, 255, 0.76);
+}
+
+#footerResults button {
+  width: 9rem;
+  height: 2.6rem;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.8);
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  border-radius: 1px;
+}
+
+#footerResults button:hover {
+  cursor: pointer;
+  color: white;
+  box-shadow: 1px 1px 20px rgba(255, 255, 255, 0.353);
 }
