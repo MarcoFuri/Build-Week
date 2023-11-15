@@ -4,10 +4,7 @@
   @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,800;1,900&display=swap');
   
 
-.container {
-    width: 80%;
-    height: 80%;
-}
+
 
 body{
     padding: 0;
@@ -21,11 +18,39 @@ body{
 }
 
 header>img{
-    width: 180px;
+    width: 150px;
     margin: 2.5rem;
     margin-left: 6.5rem;
 }
 
 h1 {
   font-family: 'Outfit', sans-serif;
+  font-weight: 400;
+  font-size: 4rem;
+line-height: 2.8rem;
+}
+
+#spanWelcome {
+  font-weight: 700;
+}
+
+#containerWelcome {
+width: 80%;
+padding-left: 6.5rem;
+}
+
+#containerWelcome h2 {
+  color: #D20094;
+  margin-bottom: 0rem;
+}
+
+#containerWelcome p {
+  margin-top: 0.5rem;
+  width: 60%;
+  
+}
+
+#contenutoWelcome {
+  font-size: 0.8rem;
+  font-weight: 300;
 }
