@@ -96,3 +96,7 @@ FOOTER
 - button finto more info. shadow. colore fluo. 
 FOOTER
 DIV
+*/
+
+document.getElementById("checkWelcome").required = true;
+

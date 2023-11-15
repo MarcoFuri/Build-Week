@@ -56,6 +56,10 @@ h1 {
   padding-left: 0.9rem;
 }
 
+#footerWelcome {
+  margin-top: 2.5rem;
+}
+
 #footerWelcome input, #footerWelcome h6, #footerWelcome button {
   display: inline-block;
 }
@@ -83,4 +87,25 @@ h1 {
   position: absolute;
   bottom: -2px;
   left: -1px;
+}
+
+#footerWelcome h6 {
+  font-weight: 500;
+}
+
+#footerWelcome button {
+  box-sizing: content-box;
+  margin-left: 10rem;
+  width: 8rem;
+  height: 2.3rem;
+  text-align: center;
+  color: black;
+  border: 0;
+  background-color: #00ffffed;
+  box-shadow: 0px 2px 20px 2px#00FFFF;
+}
+
+#footerWelcome button:hover {
+  cursor: pointer;
+  background-color: #00FFFF;
 }
