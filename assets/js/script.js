@@ -82,6 +82,8 @@ Oppure: div border radius 50%. background-color transparent. border-color colleg
 </div>
 
 
+
+
 4 pagina feedback
 
 - Sfondo sul body
@@ -94,6 +96,7 @@ Oppure: div border radius 50%. background-color transparent. border-color colleg
 - h1 tell us 
 - h2/h3 sottotitolo fontweight più leggero di h1.
 - stelline rating, ognuna ha il uso div(10) e switch case con cambio classe colori (da 1 a 4 un colore, da 5 a 10 un altro)
+
 -  h2/h3 leave us... fontweight più leggero di h1.
 - input-text type:text con 80% width, con bottom-border, background-color transparent. placeholder. padding a sinistra'
 </main>
