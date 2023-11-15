@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,800;1,900&display=swap");
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-image: url(../img/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #ebebeb;
+  font-family: "Inter Tight", sans-serif;
+}
+
+header > img {
+  width: 150px;
+  margin: 2.5rem;
+  margin-left: 6.5rem;
+  margin-bottom: 1rem;
+}
+
+#containerWelcome {
+  width: 80%;
+  padding-left: 6.5rem;
+}
+
+#containerWelcome h1 {
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 2.8rem;
+}
+
+#spanWelcome {
+  font-weight: 700;
+}
+
+#contenutoWelcome {
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+#containerWelcome h2 {
+  color: #d20094;
+  margin-bottom: 0rem;
+}
+
+#containerWelcome p {
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  width: 60%;
+}
+
+#contenutoWelcome ul {
+  padding-left: 0.9rem;
+}
+
+#footerWelcome {
+  margin-top: 2.5rem;
+}
+
+#footerWelcome input,
+#footerWelcome h6,
+#footerWelcome button {
+  display: inline-block;
+}
+
+#footerWelcome input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: white solid 2px;
+  width: 10px;
+  height: 10px;
+  margin-bottom: 0px;
+  position: relative;
+  accent-color: white;
+}
+
+#footerWelcome input[type="checkbox"]:checked::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%2300ff00' d='M5.5 11.6l-3.7-3.7c-.4-.4-.4-1 0-1.4s1-.4 1.4 0l2.3 2.3 6.3-6.3c.4-.4 1-.4 1.4 0s.4 1 0 1.4L6.9 11.6c-.4.4-1 .4-1.4 0z'/%3E%3C/svg%3E");
+  background-size: contain;
+  position: absolute;
+  bottom: -2px;
+  left: -1px;
+}
+
+#footerWelcome h6 {
+  font-weight: 500;
+}
+
+#footerWelcome button {
+  box-sizing: content-box;
+  margin-left: 10rem;
+  width: 8rem;
+  height: 2.3rem;
+  text-align: center;
+  color: black;
+  border: 0;
+  background-color: #00ffffed;
+  box-shadow: 0px 2px 20px 2px#00FFFF;
+}
+
+#footerWelcome button:hover {
+  cursor: pointer;
+  background-color: #00ffff;
+}
+
+/* pagina question  */
+
+#containerQuestion {
+  margin-top: 5rem;
+  width: 80%;
+  padding-left: 6.5rem;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+#spanQuestion {
+  font-weight: 700;
+}
+
+#contenutoQuestion1 {
+  margin-top: 3.5rem;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+#contenutoQuestion1 button:first-child {
+  margin-right: 2rem;
+}
+
+#contenutoQuestion2 {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+#contenutoQuestion2 button:first-child {
+  margin-right: 2rem;
+}
+
+#footerQuestion {
+  margin-top: 2.5rem;
+}
+
+/* /#footerQuestion h3 {
+  font-weight: ;
+}
+/ */
+
+
+
+/* pagina feedback */
+
+#stelline div {
+  display: inline-block;
+  color: #0b103c;
+  width: 4em;
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+#containerFeedback {
+  text-align: center;
+}
+
+#footerFeedback button {
+  box-sizing: content-box;
+  width: 10rem;
+  height: 3rem;
+  text-align: center;
+  color: black;
+  border: 0;
+  background-color: #00ffffed;
+  box-shadow: 0px 2px 20px 2px#00FFFF;
+  margin-top: 3rem;
+  font-weight: 900;
+  font-size: 1.1rem;
+}
+
+#footerWelcome button:hover {
+  cursor: pointer;
+  background-color: #00ffff;
+}
+
+.selected {
+  color: #00ffff;
+}
+
+#containerFeedback h1 {
+  font-weight: 600;
+  font-size: 5rem;
+  font-family: "Outfit", sans-serif;
+  margin-top: 7rem;
+}
+
+#containerFeedback h2 {
+  font-weight: 400;
+  font-size: 2rem;
+  font-family: "Outfit", sans-serif;
+}
+
+#feedbackInputText [type="text"] {
+  appearance: none;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid #d20094;
+  width: 70%;
+  padding: 0.5rem 0 0.5rem 2rem;
+  font-size: 1.3rem;
+  color: #ebebeb;
+}
+
+/* pagina Results */
+
+#containerResults {
+  text-align: center;
+  line-height: 0.5rem;
+  font-family: "Outfit", sans-serif;
+}
+
+#containerResults h1 {
+  font-weight: 600;
+}
+
+#containerResults p {
+  font-weight: 400;
+  font-size: 0.9rem;
+  letter-spacing: 1.1px;
+}
+
+#schemaResults div {
+  display: inline-block;
+}
+
+#graficoResults {
+  width: 160px;
+  line-height: 0.8rem;
+  border: 38px solid #00ffff;
+  border-radius: 50%;
+  height: 180px;
+  padding: 2.5rem 2rem 0 2rem;
+  margin: 3rem 6rem;
+}
+
+#rightAnswer,
+#wrongAnswer {
+  line-height: 0.1rem;
+  text-align: start;
+}
+
+#rightAnswer h3,
+#wrongAnswer h3 {
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 1.6px;
+}
+
+#rightAnswer h2,
+#wrongAnswer h2 {
+  font-size: 2rem;
+}
+
+#rightAnswer h6,
+#wrongAnswer h6 {
+  margin: 0;
+  font-weight: 300;
+}
+
+#graficoResults h5 span {
+  color: #00ffff;
+}
+
+#graficoResults h6 {
+  font-weight: 400;
+  font-size: 0.6rem;
+  color: rgba(255, 255, 255, 0.76);
+}
+
+#footerResults button {
+  width: 9rem;
+  height: 2.6rem;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.8);
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  border-radius: 1px;
+}
+
+#footerResults button:hover {
+  cursor: pointer;
+  color: white;
+  box-shadow: 1px 1px 20px rgba(255, 255, 255, 0.353);
+}
