@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,800;1,900&display=swap");
 
 body {
   padding: 0;
@@ -9,11 +9,10 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
-  font-family: 'Inter Tight', sans-serif;
-  ;
+  font-family: "Inter Tight", sans-serif;
 }
 
-header>img {
+header > img {
   width: 150px;
   margin: 2.5rem;
   margin-left: 6.5rem;
@@ -26,7 +25,7 @@ header>img {
 }
 
 #containerWelcome h1 {
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
   font-weight: 400;
   font-size: 4rem;
   line-height: 2.8rem;
@@ -42,7 +41,7 @@ header>img {
 }
 
 #containerWelcome h2 {
-  color: #D20094;
+  color: #d20094;
   margin-bottom: 0rem;
 }
 
@@ -60,11 +59,13 @@ header>img {
   margin-top: 2.5rem;
 }
 
-#footerWelcome input, #footerWelcome h6, #footerWelcome button {
+#footerWelcome input,
+#footerWelcome h6,
+#footerWelcome button {
   display: inline-block;
 }
 
-#footerWelcome input[type=checkbox] {
+#footerWelcome input[type="checkbox"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -77,7 +78,7 @@ header>img {
   accent-color: white;
 }
 
-#footerWelcome input[type=checkbox]:checked::before {
+#footerWelcome input[type="checkbox"]:checked::before {
   content: "";
   display: inline-block;
   width: 10px;
@@ -107,10 +108,8 @@ header>img {
 
 #footerWelcome button:hover {
   cursor: pointer;
-  background-color: #00FFFF;
+  background-color: #00ffff;
 }
-
-
 
 /* pagina question  */
 
@@ -122,7 +121,7 @@ header>img {
 }
 
 h1 {
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
   font-weight: 400;
   font-size: 3rem;
   line-height: 3rem;
@@ -156,9 +155,10 @@ h1 {
   margin-top: 2.5rem;
 }
 
-/#footerQuestion h3 {
+/* /#footerQuestion h3 {
   font-weight: ;
-}/
+}
+/ */
 
 
 
@@ -174,7 +174,6 @@ h1 {
 
 #containerFeedback {
   text-align: center;
- 
 }
 
 #footerFeedback button {
@@ -194,46 +193,42 @@ h1 {
 #footerWelcome button:hover {
   cursor: pointer;
   background-color: #00ffff;
-
 }
 
-.selected{
-    color: #00FFFF;
+.selected {
+  color: #00ffff;
 }
 
 #containerFeedback h1 {
-    font-weight: 600;
-    font-size: 5rem;
-    font-family: "Outfit", sans-serif;
-    margin-top: 7rem;
+  font-weight: 600;
+  font-size: 5rem;
+  font-family: "Outfit", sans-serif;
+  margin-top: 7rem;
 }
 
 #containerFeedback h2 {
-    font-weight: 400;
-    font-size: 2rem;
-    font-family: "Outfit", sans-serif;
-
+  font-weight: 400;
+  font-size: 2rem;
+  font-family: "Outfit", sans-serif;
 }
 
-#feedbackInputText [type="text"]{
-    appearance: none;
-    background-color: transparent;
-    border: 0;
-    border-bottom: 2px solid #d20094;
-    width: 70%;
-    padding: 0.5rem 0 0.5rem 2rem;
-    font-size: 1.3rem;
-    color: #ebebeb;
+#feedbackInputText [type="text"] {
+  appearance: none;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid #d20094;
+  width: 70%;
+  padding: 0.5rem 0 0.5rem 2rem;
+  font-size: 1.3rem;
+  color: #ebebeb;
 }
-
-
 
 /* pagina Results */
 
 #containerResults {
   text-align: center;
   line-height: 0.5rem;
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
 }
 
 #containerResults h1 {
@@ -253,35 +248,39 @@ h1 {
 #graficoResults {
   width: 160px;
   line-height: 0.8rem;
-  border: 38px solid #00FFFF;
+  border: 38px solid #00ffff;
   border-radius: 50%;
   height: 180px;
   padding: 2.5rem 2rem 0 2rem;
   margin: 3rem 6rem;
 }
 
-#rightAnswer, #wrongAnswer {
+#rightAnswer,
+#wrongAnswer {
   line-height: 0.1rem;
   text-align: start;
 }
 
-#rightAnswer h3, #wrongAnswer h3 {
+#rightAnswer h3,
+#wrongAnswer h3 {
   font-size: 2rem;
   font-weight: 300;
   letter-spacing: 1.6px;
 }
 
-#rightAnswer h2, #wrongAnswer h2 {
+#rightAnswer h2,
+#wrongAnswer h2 {
   font-size: 2rem;
 }
 
-#rightAnswer h6, #wrongAnswer h6 {
+#rightAnswer h6,
+#wrongAnswer h6 {
   margin: 0;
   font-weight: 300;
 }
 
 #graficoResults h5 span {
-  color: #00FFFF;
+  color: #00ffff;
 }
 
 #graficoResults h6 {
