@@ -8,7 +8,7 @@ body {
   background-image: url(../img/bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  color: white;
+  color: #ebebeb;
   font-family: "Inter Tight", sans-serif;
 }
 
@@ -59,9 +59,7 @@ header > img {
   margin-top: 2.5rem;
 }
 
-#footerWelcome input,
-#footerWelcome h6,
-#footerWelcome button {
+#footerWelcome input, #footerWelcome h6, #footerWelcome button {
   display: inline-block;
 }
 
@@ -70,12 +68,12 @@ header > img {
   -moz-appearance: none;
   appearance: none;
   background-color: transparent;
-  border: white solid 2px;
+  border: #ebebeb solid 2px;
   width: 10px;
   height: 10px;
   margin-bottom: 0px;
   position: relative;
-  accent-color: white;
+  accent-color: #ebebeb;
 }
 
 #footerWelcome input[type="checkbox"]:checked::before {
@@ -111,6 +109,7 @@ header > img {
   background-color: #00ffff;
 }
 
+
 /* pagina question  */
 
 #containerQuestion {
@@ -123,13 +122,74 @@ header > img {
 h1 {
   font-family: "Outfit", sans-serif;
   font-weight: 400;
-  font-size: 3rem;
+  font-size: 2rem;
   line-height: 3rem;
 }
 
-#spanQuestion {
-  font-weight: 700;
+
+/*TIMER*/
+
+#app {
+  position: absolute;
+  right: 12vw;
+  top: 6vh;
 }
+
+.base-timer {
+  position: relative;
+  width: 100px;
+  height: 100px;  
+}
+  
+.base-timer__svg {
+  transform: scaleX(1); 
+}
+  
+.base-timer__circle {
+  fill: none;
+  stroke: none;  
+}
+  
+.base-timer__path-elapsed {
+  stroke-width: 10px;
+  stroke: rgb(128, 128, 128, 0.2);    
+}
+  
+.base-timer__path-remaining {
+  stroke-width: 10px;
+  stroke-linecap: square;
+  transform: rotate(90deg);
+  transform-origin: center;
+  transition: 1s linear all;
+  fill-rule: nonzero;
+  stroke: currentColor;  
+}
+  
+.base-timer__path-remaining.green {
+  color:#00ffff;
+    
+}
+  
+ /* .base-timer__path-remaining.orange {
+    color: orange;
+  }
+  
+  .base-timer__path-remaining.red {
+    color: red;
+  }*/
+  
+.base-timer__label {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+    
+}
+
 
 #contenutoQuestion1 {
   margin-top: 3.5rem;
@@ -155,12 +215,40 @@ h1 {
   margin-top: 2.5rem;
 }
 
-/* /#footerQuestion h3 {
-  font-weight: ;
+#questions {
+  margin-top: 12vh;
 }
-/ */
+
+#questions button {
+  min-width: 30vw;
+  height: 4.7rem;
+  border-radius: 40px;
+  background-color: rgba(255, 255, 255, 0.077);
+  color: #ebebeb;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.selected {
+  background-image: linear-gradient(#d20093c2, #90007fc7);
+}
+
+#questions button:hover {
+  background-image: linear-gradient(#d20094, #900080);
+}
 
 
+#footerQuestion h3 {
+  font-weight: 500;
+  font-size: 1rem;
+  font-family:"Outfit", sans-serif;
+  letter-spacing: 1.2px;
+  margin-top: 30vh;
+}
+
+#footerQuestion span:last-of-type {
+  color: #c501ae;
+}
 
 /* pagina feedback */
 
@@ -300,6 +388,6 @@ h1 {
 
 #footerResults button:hover {
   cursor: pointer;
-  color: white;
+  color: #ebebeb;
   box-shadow: 1px 1px 20px rgba(255, 255, 255, 0.353);
 }
