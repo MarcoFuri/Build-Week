@@ -106,6 +106,7 @@ let answerChosen;
 let rightAnswersSum = 0;
 let wrongAnswersSum = 0;
 
+
 window.onload = function () {
   generateQuiz()
 }
@@ -122,17 +123,18 @@ function generateQuiz() {
 }
 
 function resetQuestion(){
-  document.querySelector("#spawnerQuestions h1").innerText = "";
+  document.querySelector("#titleQuestion").innerText = "";
   let buttons = document.querySelectorAll(".styleButton");
   buttons.forEach((element) => element.innerText = "")
   buttons.forEach((element) => element.classList.remove("selected"))
   document.querySelector("#questionsCounter").innerText = "";
   document.querySelector("#contenutoQuestion2").style.display = "";
+  document.querySelector(".nextButton").setAttribute("id", "")
   // resetta tasto next
 }
 
 function setQuestion() {
-    let question = document.querySelector("#spawnerQuestions h1");
+    let question = document.querySelector("#titleQuestion");
     let p = document.createElement("p");
     const domanda = selectQuestion();
     console.log(domanda)
@@ -249,22 +251,26 @@ function printQuestionNumber() {
 function nextPage(){
   if(answerChosen === questions[indexCurrentQuestion].correct_answer){
     rightAnswersSum += 1
+    console.log("wrong answers given", wrongAnswersSum)
+    console.log("right answers given", rightAnswersSum)
   } else {
     wrongAnswersSum += 1
+    console.log("wrong answers given", wrongAnswersSum)
+    console.log("right answers given", rightAnswersSum)
   }
 
   if (indexQuestionChosen.length < questions.length){
     resetTimer()
     generateQuiz()
   } else {
-      window.location.href = 'results.html';
+    window.location.href = `results.html?${rightAnswersSum}|${wrongAnswersSum}`;
   }
-}
-
-function resetTimer() {
   
 }
 
+function resetTimer() {
+
+}
 
 
 
@@ -347,16 +353,6 @@ function startTimer() {
   }, 1000);
 }
 
-/*function formatTime(time) {
-  const minutes = Math.floor(time / 60);
-  let seconds = time % 60;
-
-  if (seconds < 10) {
-    seconds = `0${seconds}`;
-  }
-
-  return `${minutes}:${seconds}`;
-}*/
 function formatTime(time) {
     const minutes = Math.floor(time / 60);
     let seconds = time % 61;
@@ -368,25 +364,6 @@ function formatTime(time) {
     return `${seconds}`;
   }
 
-/*function setRemainingPathColor(timeLeft) {
-  const { alert, warning, info } = COLOR_CODES;
-  if (timeLeft <= alert.threshold) {
-    document
-      .getElementById("base-timer-path-remaining")
-      .classList.remove(warning.color);
-    document
-      .getElementById("base-timer-path-remaining")
-      .classList.add(alert.color);
-  } else if (timeLeft <= warning.threshold) {
-    document
-      .getElementById("base-timer-path-remaining")
-      .classList.remove(info.color);
-    document
-      .getElementById("base-timer-path-remaining")
-      .classList.add(warning.color);
-  }
-} *///Possibile parte da cambiare dei colori
-
 function setRemainingPathColor(timeLeft) {
     const {info} = COLOR_CODES;
     if (timeLeft <= info.threshold) {
@@ -394,10 +371,6 @@ function setRemainingPathColor(timeLeft) {
         .classList.add(info.color);
     }
   }
-
-
-
-
 
 function calculateTimeFraction() {
   const rawTimeFraction = timeLeft / TIME_LIMIT;
