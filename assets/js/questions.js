@@ -172,7 +172,7 @@ function setMultipleAnswers() {
         
         do {
             answerSelected = Math.floor(Math.random()*4 +1)
-        } while (answersAlreadySet.find(value => value === answerSelected))
+        } while (answersAlreadySet.includes(answerSelected))
 
         answersAlreadySet.push(answerSelected)
 
@@ -213,8 +213,8 @@ function setBooleanAnswers() {
         
         do {
             answerSelected = Math.floor(Math.random()*2 +1)
-        } while (answersAlreadySet.includes(value => value === answerSelected))
-
+        } while (answersAlreadySet.includes(answerSelected))
+        
         answersAlreadySet.push(answerSelected)
 
         switch (answerSelected) {
