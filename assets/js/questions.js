@@ -108,11 +108,13 @@ let wrongAnswersSum = 0;
 
 
 window.onload = function () {
+  startTimer();
   generateQuiz()
 }
 
 function generateQuiz() {
       resetQuestion()
+      resetTimer()
       setQuestion() //printQuestion(chosen) //questions[chosen].question
       if(questions[indexCurrentQuestion].type === "multiple"){
           setMultipleAnswers()
@@ -251,16 +253,13 @@ function printQuestionNumber() {
 function nextPage(){
   if(answerChosen === questions[indexCurrentQuestion].correct_answer){
     rightAnswersSum += 1
-    console.log("wrong answers given", wrongAnswersSum)
-    console.log("right answers given", rightAnswersSum)
   } else {
     wrongAnswersSum += 1
-    console.log("wrong answers given", wrongAnswersSum)
-    console.log("right answers given", rightAnswersSum)
   }
 
   if (indexQuestionChosen.length < questions.length){
-    resetTimer()
+    console.log(rightAnswersSum)
+    console.log(wrongAnswersSum)
     generateQuiz()
   } else {
     window.location.href = `results.html?${rightAnswersSum}|${wrongAnswersSum}`;
@@ -268,41 +267,16 @@ function nextPage(){
   
 }
 
-function resetTimer() {
-
-}
-
-
-
 //TIMER
 const FULL_DASH_ARRAY = 283;
-/*const WARNING_THRESHOLD = 10;
-const ALERT_THRESHOLD = 5;*/
-
-/*const COLOR_CODES = {
-  info: {
-    color: "green"
-  },
-  warning: {
-    color: "orange",
-    threshold: WARNING_THRESHOLD
-  },
-  alert: {
-    color: "red",
-    threshold: ALERT_THRESHOLD
-  }
-;*///Possibile parte da cambiare dei colori
 
 const COLOR_CODES = {
     info: {
       color: "green"
     }};
 
-
-
-
 const TIME_LIMIT = 60;
-let timePassed = 0;
+let timePassed;
 let timeLeft = TIME_LIMIT;
 let timerInterval = null;
 let remainingPathColor = COLOR_CODES.info.color;
@@ -331,19 +305,27 @@ document.getElementById("app").innerHTML = `
 </div>
 `;
 
-startTimer();
 
 function onTimesUp() {
   clearInterval(timerInterval);
+  nextPage()
+  startTimer()
+}
+
+function resetTimer() {
+  clearInterval(timerInterval);
+  startTimer()
 }
 
 function startTimer() {
+  timePassed = 0
   timerInterval = setInterval(() => {
-    timePassed = timePassed += 1;
+    timePassed += 1;
     timeLeft = TIME_LIMIT - timePassed;
     document.getElementById("base-timer-label").innerHTML = formatTime(
       timeLeft
     );
+  
     setCircleDasharray();
     setRemainingPathColor(timeLeft);
 
@@ -354,8 +336,11 @@ function startTimer() {
 }
 
 function formatTime(time) {
-    const minutes = Math.floor(time / 60);
-    let seconds = time % 61;
+  if(time === 00){
+    time = 60
+  } 
+  const minutes = Math.floor(time / 60);
+  let seconds = time % 61;
   
     if (seconds < 10) {
       seconds = `0${seconds}`;

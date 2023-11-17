@@ -278,6 +278,12 @@ header > img {
 #answerSelected {
   background-color: #00ffffed;
   box-shadow: 0px 2px 20px 2px#00FFFF;
+  cursor: pointer;
+}
+
+#answerSelected:hover{
+  background-color: #00ffff;
+  box-shadow: 0px 2px 20px 2px#00FFFF;
 }
 
 /* pagina feedback */
