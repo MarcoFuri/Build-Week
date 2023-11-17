@@ -99,43 +99,63 @@ const questions = [
   ];
 
 
-const questionsAlreadyDone = [];
+// const indexQuestionChosen = [];
 const indexQuestionChosen = [];
 let indexCurrentQuestion;
+let answerChosen;
+let rightAnswersSum = 0;
+let wrongAnswersSum = 0;
 
 window.onload = function () {
-    setQuestion() //printQuestion(chosen) //questions[chosen].question
-    if(questions[indexCurrentQuestion].type === "multiple"){
-        setMultipleAnswers()
-    } else {
-        setBooleanAnswers()
-    }  
-    // makeAnswerClickable()
+  generateQuiz()
+}
+
+function generateQuiz() {
+      resetQuestion()
+      setQuestion() //printQuestion(chosen) //questions[chosen].question
+      if(questions[indexCurrentQuestion].type === "multiple"){
+          setMultipleAnswers()
+      } else {
+          setBooleanAnswers()
+      }  
+      printQuestionNumber()
+}
+
+function resetQuestion(){
+  document.querySelector("#spawnerQuestions h1").innerText = "";
+  let buttons = document.querySelectorAll(".styleButton");
+  buttons.forEach((element) => element.innerText = "")
+  buttons.forEach((element) => element.classList.remove("selected"))
+  document.querySelector("#questionsCounter").innerText = "";
+  document.querySelector("#contenutoQuestion2").style.display = "";
+  // resetta tasto next
 }
 
 function setQuestion() {
     let question = document.querySelector("#spawnerQuestions h1");
     let p = document.createElement("p");
-    p.innerText = selectQuestion();
+    const domanda = selectQuestion();
+    console.log(domanda)
+    p.innerText = domanda;
     question.appendChild(p);
 }
 
 function selectQuestion(){
     indexCurrentQuestion = "";
-    let chosen = Math.floor(Math.random()* 9); // 4
-    let notValid = questionsAlreadyDone.find(value => value === questions[chosen]);
-    if(notValid){
-        selectQuestion()
+    let chosen = Math.floor(Math.random()* 10); // 4
+    console.log("random number", chosen)
+    let alreadyPresent = indexQuestionChosen.includes(chosen);
+    console.log("question already answered", alreadyPresent)
+    if(alreadyPresent){ 
+        return selectQuestion()
     } else {
-        questionsAlreadyDone.push(questions[chosen])
+        console.log("question chosen",chosen)
         indexQuestionChosen.push(chosen)
+        indexQuestionChosen
+        // indexQuestionChosen.push(chosen)
         indexCurrentQuestion = chosen;
-        return printQuestion(chosen) // printQuestion(4)
+        return questions[chosen].question;
     }
-}
-
-function printQuestion(index){
-    return questions[index].question;
 }
 
 function setMultipleAnswers() {
@@ -156,31 +176,26 @@ function setMultipleAnswers() {
             case 1:
                 answer.innerText = questions[indexCurrentQuestion].correct_answer
                 spot.appendChild(answer)
-                answersAlreadySet.push(questions[indexCurrentQuestion].correct_answer)
                 break;
 
             case 2:
                 answer.innerText = questions[indexCurrentQuestion].incorrect_answers[0]
                 spot.appendChild(answer)
-                answersAlreadySet.push(questions[indexCurrentQuestion].incorrect_answers[0])
                 break;
 
             case 3:
                 answer.innerText = questions[indexCurrentQuestion].incorrect_answers[1]
                 spot.appendChild(answer)
-                answersAlreadySet.push(questions[indexCurrentQuestion].incorrect_answers[1])
                 break;
 
             case 4:
                 answer.innerText = questions[indexCurrentQuestion].incorrect_answers[2]
                 spot.appendChild(answer)
-                answersAlreadySet.push(questions[indexCurrentQuestion].incorrect_answers[2])
                 break;
-
-        }
-        
+        } 
     }
 }
+
 
 
 function setBooleanAnswers() {
@@ -194,7 +209,7 @@ function setBooleanAnswers() {
         
         do {
             answerSelected = Math.floor(Math.random()*2 +1)
-        } while (answersAlreadySet.find(value => value === answerSelected))
+        } while (answersAlreadySet.includes(value => value === answerSelected))
 
         answersAlreadySet.push(answerSelected)
 
@@ -202,17 +217,55 @@ function setBooleanAnswers() {
             case 1:
                 answer.innerText = questions[indexCurrentQuestion].correct_answer
                 spot.appendChild(answer)
-                answersAlreadySet.push(questions[indexCurrentQuestion].correct_answer)
                 break;
 
             case 2:
                 answer.innerText = questions[indexCurrentQuestion].incorrect_answers[0]
                 spot.appendChild(answer)
-                answersAlreadySet.push(questions[indexCurrentQuestion].incorrect_answers[0])
                 break;
     }
-    }
+  }
 }
+
+
+function select(num){
+  answerChosen = "";
+  let buttons = document.querySelectorAll(".styleButton");
+  buttons.forEach((element) => element.classList.remove("selected"))
+  let buttonChosen = document.getElementById("button_" + num);
+  buttonChosen.classList.add("selected")
+  answerChosen = buttonChosen.innerText
+  console.log(answerChosen)
+  document.querySelector("#containerFooterQuestion button").setAttribute("id", "answerSelected")
+}
+
+function printQuestionNumber() {
+  let counter = document.getElementById("questionsCounter");
+  let h3 = document.createElement("h3")
+  h3.innerHTML = "QUESTION " + indexQuestionChosen.length + "<span> /10<span>"
+  counter.appendChild(h3)
+}
+
+function nextPage(){
+  if(answerChosen === questions[indexCurrentQuestion].correct_answer){
+    rightAnswersSum += 1
+  } else {
+    wrongAnswersSum += 1
+  }
+
+  if (indexQuestionChosen.length < questions.length){
+    resetTimer()
+    generateQuiz()
+  } else {
+      window.location.href = 'results.html';
+  }
+}
+
+function resetTimer() {
+  
+}
+
+
 
 
 //TIMER

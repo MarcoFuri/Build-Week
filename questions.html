@@ -19,19 +19,24 @@
                 <h1></h1>
                 <div id="questions">
                     <div id="contenutoQuestion1">
-                        <button id="button_1" class="styleButton"></button>
-                        <button id="button_2" class="styleButton"></button>
+                        <button id="button_1" class="styleButton" onclick="select(1)"></button>
+                        <button id="button_2" class="styleButton" onclick="select(2)"></button>
                     </div>
                     <div id="contenutoQuestion2">
-                        <button id="button_3" class="styleButton"></button>
-                        <button id="button_4" class="styleButton"></button>
+                        <button id="button_3" class="styleButton" onclick="select(3)"></button>
+                        <button id="button_4" class="styleButton" onclick="select(4)"></button>
                     </div>
                 </div>
             </div>
         </main>
         <footer>
-            <div id="footerQuestion">
-                <h3>QUESTION <span id="questionsCounter"></span> <span>/ 10</span></h3>
+            <div id="containerFooterQuestion">
+                <div id="footerQuestion">
+                    <h3 id="questionsCounter"></h3>
+                </div>
+                <div>
+                    <a><button type="button" name="next" class="nextButton" onclick="nextPage()">Next</button></a>
+                </div>
             </div>
         </footer>
     </div>
