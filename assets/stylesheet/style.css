@@ -133,6 +133,7 @@ header > img {
   position: absolute;
   right: 12vw;
   top: 6vh;
+  
 }
 
 .base-timer {
@@ -261,8 +262,8 @@ header > img {
 .nextButton {
   box-sizing: content-box;
   margin-left: 10rem;
-  width: 3rem;
-  height: 1.5rem;
+  width: 5rem;
+  height: 2rem;
   text-align: center;
   color: black;
   border: 0;
