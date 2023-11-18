@@ -132,6 +132,7 @@ function resetQuestion(){
   document.querySelector("#questionsCounter").innerText = "";
   document.querySelector("#contenutoQuestion2").style.display = "";
   document.querySelector(".nextButton").setAttribute("id", "")
+  document.querySelector("#containerFooterQuestion button").setAttribute("onclick", "")
   // resetta tasto next
 }
 
@@ -241,6 +242,7 @@ function select(num){
   answerChosen = buttonChosen.innerText
   console.log(answerChosen)
   document.querySelector("#containerFooterQuestion button").setAttribute("id", "answerSelected")
+  document.querySelector("#containerFooterQuestion button").setAttribute("onclick", "nextPage()")
 }
 
 function printQuestionNumber() {
@@ -275,7 +277,7 @@ const COLOR_CODES = {
       color: "green"
     }};
 
-const TIME_LIMIT = 60;
+const TIME_LIMIT = 45;
 let timePassed;
 let timeLeft = TIME_LIMIT;
 let timerInterval = null;
@@ -322,9 +324,7 @@ function startTimer() {
   timerInterval = setInterval(() => {
     timePassed += 1;
     timeLeft = TIME_LIMIT - timePassed;
-    document.getElementById("base-timer-label").innerHTML = formatTime(
-      timeLeft
-    );
+    document.getElementById("base-timer-label").innerHTML = formatTime(timeLeft);
   
     setCircleDasharray();
     setRemainingPathColor(timeLeft);
@@ -337,10 +337,10 @@ function startTimer() {
 
 function formatTime(time) {
   if(time === 00){
-    time = 60
+    time = 45
   } 
-  const minutes = Math.floor(time / 60);
-  let seconds = time % 61;
+  const minutes = Math.floor(time / 45);
+  let seconds = time % 46;
   
     if (seconds < 10) {
       seconds = `0${seconds}`;
