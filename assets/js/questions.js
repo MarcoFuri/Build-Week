@@ -336,7 +336,7 @@ function startTimer() {
 }
 
 function formatTime(time) {
-  if(time === 00){
+  if(time === 0o0){
     time = 45
   } 
   const minutes = Math.floor(time / 45);
