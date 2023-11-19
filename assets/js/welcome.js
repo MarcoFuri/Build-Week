@@ -98,5 +98,15 @@ FOOTER
 DIV
 */
 
-document.getElementById("checkWelcome").required = true;
+// document.getElementById("checkWelcome").required = true;
+
+function checkButton(){
+  var check = document.getElementById("checkWelcome");
+  if(check.checked){
+    window.location.href = "questions.html";
+  }
+  else{
+    alert("accetta i termini e le condizioni prima di procedere")
+  }
+}
 
