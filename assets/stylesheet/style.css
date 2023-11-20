@@ -117,9 +117,8 @@ header > img {
 /* pagina question  */
 
 #containerQuestion {
-  margin-top: 5rem;
+  margin: 5rem auto 0rem auto;
   width: 80%;
-  padding-left: 6.5rem;
   text-align: center;
 }
 
@@ -135,9 +134,8 @@ header > img {
 
 #app {
   position: absolute;
-  right: 12vw;
-  top: 6vh;
-  
+  right: 6.5rem;
+  top: 2.5rem;
 }
 
 .base-timer {
