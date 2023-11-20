@@ -500,3 +500,13 @@ header > img {
 .hidden {
   display: none !important;
 }
+
+#footerResults button:hover {
+  cursor: pointer;
+  color: #ebebeb;
+  box-shadow: 0px 2px 20px 2px#00FFFF;;
+  cursor: pointer;
+  background-color: #00ffff;
+  border: 0;
+  color: black;
+}
