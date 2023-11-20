@@ -312,6 +312,7 @@ header > img {
   font-size: 1.6rem;
   font-family: "Outfit", sans-serif;
   margin-top: 1rem;
+  line-height: 10rem;
 }
 
 #perMarginStelline {
@@ -336,6 +337,7 @@ header > img {
 
 #feedbackInputText {
   display: inline;
+  
 }
 
 #feedbackInputText input {
