@@ -133,7 +133,7 @@ function resetQuestion(){
   document.querySelector("#contenutoQuestion2").style.display = "";
   document.querySelector(".nextButton").setAttribute("id", "")
   document.querySelector("#containerFooterQuestion button").setAttribute("onclick", "")
-  // resetta tasto next
+  
 }
 
 function setQuestion() {
