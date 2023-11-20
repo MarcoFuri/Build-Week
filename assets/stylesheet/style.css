@@ -289,16 +289,65 @@ header > img {
 
 /* pagina feedback */
 
-#stelline div {
-  display: inline-block;
-  color: #0b103c;
-  width: 4em;
-  margin-top: 1rem;
-  margin-bottom: 2.5rem;
+#containerFeedback {
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
 }
 
-#containerFeedback {
-  text-align: center;
+#containerFeedback main{
+  display: inline;
+}
+
+#containerFeedback h1 {
+  font-weight: 600;
+  font-size: 3.5rem;
+  font-family: "Outfit", sans-serif;
+  margin-top: 3rem;
+  margin-bottom: 0;
+}
+
+#containerFeedback h2 {
+  font-weight: 400;
+  font-size: 1.6rem;
+  font-family: "Outfit", sans-serif;
+  margin-top: 1rem;
+}
+
+#perMarginStelline {
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+}
+
+#stelline {
+  width: 40em;
+  display: inline;
+}
+
+#stelline i:hover {
+  color: #00ffff3e
+}
+
+.fa-solid {
+  font-size: 2.5rem;
+  width: 3rem;
+  color: #03082f;
+}
+
+#feedbackInputText {
+  display: inline;
+}
+
+#feedbackInputText input {
+  appearance: none;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid #d20094;
+  width: 70%;
+  padding: 0.5rem 0 0.5rem 2rem;
+  font-size: 1rem;
+  color: #ebebeb;
+  display: inline;
 }
 
 #footerFeedback button {
@@ -313,39 +362,12 @@ header > img {
   margin-top: 3rem;
   font-weight: 900;
   font-size: 1.1rem;
+  margin-bottom: 3rem;
 }
 
 #footerWelcome button:hover {
   cursor: pointer;
   background-color: #00ffff;
-}
-
-.selected {
-  color: #00ffff;
-}
-
-#containerFeedback h1 {
-  font-weight: 600;
-  font-size: 5rem;
-  font-family: "Outfit", sans-serif;
-  margin-top: 7rem;
-}
-
-#containerFeedback h2 {
-  font-weight: 400;
-  font-size: 2rem;
-  font-family: "Outfit", sans-serif;
-}
-
-#feedbackInputText [type="text"] {
-  appearance: none;
-  background-color: transparent;
-  border: 0;
-  border-bottom: 2px solid #d20094;
-  width: 70%;
-  padding: 0.5rem 0 0.5rem 2rem;
-  font-size: 1.3rem;
-  color: #ebebeb;
 }
 
 /* pagina Results */
@@ -482,3 +504,4 @@ header > img {
 .hidden {
   display: none !important;
 }
+
