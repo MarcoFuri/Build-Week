@@ -384,19 +384,23 @@ header > img {
   left: 40px;
 }
 
-#passedExam,
+#passedExam{
+  position: relative;
+  bottom: 215px;
+}
+
+
 #failedExam {
   position: relative;
-  bottom: 225px;
+  bottom: 215px;
 }
 
 #passedExam > h6 {
-  width: 195px;
+  width: 170px;
 }
 
-#failedExam {
-  position: relative;
-  bottom: 200px;
+#failedExam > h6 {
+  width: 170px;
 }
 
 #titleResults {
@@ -417,6 +421,13 @@ header > img {
 #graficoResults h5 span {
   color: #00ffff;
 }
+
+
+#failedExam h5 span{
+  color: #d20094;
+}
+
+
 
 #graficoResults h6 {
   font-weight: 400;
