@@ -24,7 +24,7 @@ header > img {
 
 #containerWelcome {
   width: 80%;
- padding-left: 7rem;
+  padding-left: 7rem;
 }
 
 #containerWelcome h1 {
@@ -63,7 +63,9 @@ header > img {
   margin-top: 4rem;
 }
 
-#footerWelcome input, #footerWelcome h6, #footerWelcome button {
+#footerWelcome input,
+#footerWelcome h6,
+#footerWelcome button {
   display: inline-block;
 }
 
@@ -113,7 +115,6 @@ header > img {
   background-color: #00ffff;
 }
 
-
 /* pagina question  */
 
 #containerQuestion {
@@ -130,36 +131,34 @@ header > img {
   line-height: 3rem;
 }
 
-
 /*TIMER*/
 
 #app {
   position: absolute;
   right: 12vw;
   top: 6vh;
-  
 }
 
 .base-timer {
   position: relative;
   width: 100px;
-  height: 100px;  
+  height: 100px;
 }
-  
+
 .base-timer__svg {
-  transform: scaleX(1); 
+  transform: scaleX(1);
 }
-  
+
 .base-timer__circle {
   fill: none;
-  stroke: none;  
+  stroke: none;
 }
-  
+
 .base-timer__path-elapsed {
   stroke-width: 10px;
-  stroke: rgb(128, 128, 128, 0.2);    
+  stroke: rgb(128, 128, 128, 0.2);
 }
-  
+
 .base-timer__path-remaining {
   stroke-width: 10px;
   stroke-linecap: square;
@@ -167,22 +166,21 @@ header > img {
   transform-origin: center;
   transition: 1s linear all;
   fill-rule: nonzero;
-  stroke: currentColor;  
+  stroke: currentColor;
 }
-  
+
 .base-timer__path-remaining.green {
-  color:#00ffff;
-    
+  color: #00ffff;
 }
-  
- /* .base-timer__path-remaining.orange {
+
+/* .base-timer__path-remaining.orange {
     color: orange;
   }
   
   .base-timer__path-remaining.red {
     color: red;
   }*/
-  
+
 .base-timer__label {
   position: absolute;
   width: 100px;
@@ -192,9 +190,7 @@ header > img {
   align-items: center;
   justify-content: center;
   font-size: 32px;
-    
 }
-
 
 #contenutoQuestion1 {
   margin-top: 3.5rem;
@@ -251,7 +247,7 @@ header > img {
   font-weight: 500;
   font-size: 1rem;
   width: 25vw;
-  font-family:"Outfit", sans-serif;
+  font-family: "Outfit", sans-serif;
   letter-spacing: 1.2px;
   margin-top: 30vh;
   position: absolute;
@@ -286,7 +282,7 @@ header > img {
   cursor: pointer;
 }
 
-#answerSelected:hover{
+#answerSelected:hover {
   background-color: #00ffff;
   box-shadow: 0px 2px 20px 2px#00FFFF;
 }
@@ -299,7 +295,7 @@ header > img {
   margin: 0 auto;
 }
 
-#containerFeedback main{
+#containerFeedback main {
   display: inline;
 }
 
@@ -336,12 +332,11 @@ header > img {
 }
 
 #stelline i:hover {
-  color: #00ffff3e
+  color: #00ffff3e;
 }
 
 #feedbackInputText {
   display: inline;
-  
 }
 
 #feedbackInputText input {
@@ -412,11 +407,10 @@ header > img {
   left: 40px;
 }
 
-#passedExam{
+#passedExam {
   position: relative;
   bottom: 215px;
 }
-
 
 #failedExam {
   position: relative;
@@ -450,12 +444,9 @@ header > img {
   color: #00ffff;
 }
 
-
-#failedExam h5 span{
+#failedExam h5 span {
   color: #d20094;
 }
-
-
 
 #graficoResults h6 {
   font-weight: 400;
@@ -510,6 +501,3 @@ header > img {
 .hidden {
   display: none !important;
 }
-
-
-
