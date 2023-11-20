@@ -496,12 +496,6 @@ header > img {
   margin-bottom: 100px;
 }
 
-#footerResults button:hover {
-  cursor: pointer;
-  color: #ebebeb;
-  box-shadow: 1px 1px 20px rgba(255, 255, 255, 0.353);
-}
-
 .hidden {
   display: none !important;
 }
@@ -514,4 +508,5 @@ header > img {
   background-color: #00ffff;
   border: 0;
   color: black;
+  font-weight: 600;
 }

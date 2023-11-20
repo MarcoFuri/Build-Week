@@ -277,7 +277,7 @@ const COLOR_CODES = {
       color: "green"
     }};
 
-const TIME_LIMIT = 45;
+const TIME_LIMIT = 30;
 let timePassed;
 let timeLeft = TIME_LIMIT;
 let timerInterval = null;
@@ -335,10 +335,10 @@ function startTimer() {
 
 function formatTime(time) {
   if(time === 0o0){
-    time = 45
+    time = 30
   } 
-  const minutes = Math.floor(time / 45);
-  let seconds = time % 46;
+  const minutes = Math.floor(time / 30);
+  let seconds = time % 31;
   
     if (seconds < 10) {
       seconds = `0${seconds}`;
