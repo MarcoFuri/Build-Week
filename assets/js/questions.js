@@ -311,7 +311,6 @@ document.getElementById("app").innerHTML = `
 function onTimesUp() {
   clearInterval(timerInterval);
   nextPage()
-  startTimer()
 }
 
 function resetTimer() {
