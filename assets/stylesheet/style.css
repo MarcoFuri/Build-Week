@@ -304,14 +304,19 @@ header > img {
   font-family: "Outfit", sans-serif;
   margin-top: 3rem;
   margin-bottom: 0;
+  
 }
 
 #containerFeedback h2 {
   font-weight: 400;
   font-size: 1.6rem;
   font-family: "Outfit", sans-serif;
-  margin-top: 1rem;
-  line-height: 10rem;
+  margin-top: 4rem;
+  
+}
+
+#containerFeedback h2:first-of-type{
+  margin-bottom: 4rem;
 }
 
 #perMarginStelline {
@@ -328,6 +333,7 @@ header > img {
 #stelline {
   width: 40em;
   display: inline;
+  
 }
 
 #stelline i:hover {
@@ -336,6 +342,7 @@ header > img {
 
 #feedbackInputText {
   display: inline;
+  
 }
 
 #feedbackInputText input {
@@ -348,6 +355,8 @@ header > img {
   font-size: 1rem;
   color: #ebebeb;
   display: inline;
+  margin-top: 4rem;
+  
 }
 
 #footerFeedback button {
