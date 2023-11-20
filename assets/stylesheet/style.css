@@ -330,14 +330,6 @@ header > img {
   display: inline;
 }
 
-.selectedStars {
-  color: #00FFFF;
-}
-
-.deselectedStars {
-  color: #03082f;
-}
-
 #stelline i:hover {
   color: #00ffff3e
 }

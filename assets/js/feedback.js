@@ -12,6 +12,6 @@ function coloraStelle(id) {
     } else {
       document.getElementById(i).style.color = "#03082f";
     }
-  }
+   }
   }
 }
