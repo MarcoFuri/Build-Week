@@ -24,7 +24,7 @@ window.onload = function () {
     datasets: [
       {
         data: [right, wrong],
-        backgroundColor: ["#D20094", "#00FFFF"],
+        backgroundColor: ["#00FFFF", "#D20094"],
         cutout: "65%",
       },
     ],
