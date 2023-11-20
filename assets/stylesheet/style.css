@@ -370,14 +370,58 @@ header > img {
   display: inline-block;
 }
 
+#rightAnswer,
+#wrongAnswer {
+  position: relative;
+  bottom: 200px;
+}
+
+#rightAnswer {
+  right: 40px;
+}
+
+#wrongAnswer {
+  left: 40px;
+}
+
+#passedExam,
+#failedExam {
+  position: relative;
+  bottom: 225px;
+}
+
+#passedExam > h6 {
+  width: 195px;
+}
+
+#failedExam {
+  position: relative;
+  bottom: 200px;
+}
+
+#titleResults {
+  margin-bottom: 40px;
+}
+
+#wrongAnswer {
+  text-align: right;
+}
+
 #graficoResults {
-  width: 160px;
+  width: 300px;
+  padding: 0;
+  margin: 0;
   line-height: 0.8rem;
-  border: 38px solid #00ffff;
-  border-radius: 50%;
-  height: 180px;
-  padding: 2.5rem 2rem 0 2rem;
-  margin: 3rem 6rem;
+}
+
+#graficoResults h5 span {
+  color: #00ffff;
+}
+
+#graficoResults h6 {
+  font-weight: 400;
+  font-size: 0.6rem;
+  color: rgba(255, 255, 255, 0.76);
 }
 
 #rightAnswer,
@@ -404,27 +448,26 @@ header > img {
   font-weight: 300;
 }
 
-#graficoResults h5 span {
-  color: #00ffff;
-}
-
-#graficoResults h6 {
-  font-weight: 400;
-  font-size: 0.6rem;
-  color: rgba(255, 255, 255, 0.76);
-}
-
 #footerResults button {
+  /* non servono */
+  /* position: absolute;
+  bottom: 50px;
+  left: 500px; */
   width: 9rem;
   height: 2.6rem;
   background-color: transparent;
   color: rgba(255, 255, 255, 0.8);
   border: 2px solid rgba(255, 255, 255, 0.8);
   border-radius: 1px;
+  margin-bottom: 100px;
 }
 
 #footerResults button:hover {
   cursor: pointer;
   color: #ebebeb;
   box-shadow: 1px 1px 20px rgba(255, 255, 255, 0.353);
+}
+
+.hidden {
+  display: none !important;
 }
