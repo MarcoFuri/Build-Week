@@ -319,19 +319,27 @@ header > img {
   margin-bottom: 4rem;
 }
 
+.fa-solid {
+  font-size: 2.5rem;
+  width: 3rem;
+  color: #03082f;
+}
+
 #stelline {
   width: 40em;
   display: inline;
 }
 
-#stelline i:hover {
-  color: #00ffff3e
+.selectedStars {
+  color: #00FFFF;
 }
 
-.fa-solid {
-  font-size: 2.5rem;
-  width: 3rem;
+.deselectedStars {
   color: #03082f;
+}
+
+#stelline i:hover {
+  color: #00ffff3e
 }
 
 #feedbackInputText {
@@ -504,4 +512,6 @@ header > img {
 .hidden {
   display: none !important;
 }
+
+
 
