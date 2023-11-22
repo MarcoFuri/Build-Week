@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Page</title>
+    <link rel="stylesheet" href="assets/stylesheet/style.css">
+</head>
+
+<body>
+    <header>
+        <img src="assets/img/epicode_logo.png" alt="logo" />
+        <div id="app"></div>
+    </header>
+    <div id="containerQuestion">
+        <main>
+            <div id="spawnerQuestions">
+                <h1 id="titleQuestion"></h1>
+                <div id="questions">
+                    <div id="contenutoQuestion1">
+                        <button id="button_1" class="styleButton" onclick="select(1)"></button>
+                        <button id="button_2" class="styleButton" onclick="select(2)"></button>
+                    </div>
+                    <div id="contenutoQuestion2">
+                        <button id="button_3" class="styleButton" onclick="select(3)"></button>
+                        <button id="button_4" class="styleButton" onclick="select(4)"></button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div id="containerFooterQuestion">
+                <div id="footerQuestion">
+                    <h3 id="questionsCounter"></h3>
+                </div>
+                <div>
+                    <button type="button" name="next" class="nextButton"><b>NEXT</b></button>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="assets/js/questions.js"></script>
+</body>
+
+</html>

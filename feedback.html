@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback</title>
+    <link rel="stylesheet" href="assets/stylesheet/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <header>
+      <img src="assets/img/epicode_logo.png" alt="logo" />
+    </header>
+
+    <div id="containerFeedback">
+      <main>
+        <h1>Tell us how it's going</h1>
+        <h2>
+          From 0 to 10, how likely are you to recommend EPICODE to a friend or a
+          colleague?
+        </h2>
+
+        <div id="stelline">
+          <i id="1" class="fa-solid fa-star" onclick="coloraStelle(id)"></i>
+
+          <i id="2" class="fa-solid fa-star" onclick="coloraStelle(id)"></i>
+
+          <i id="3" class="fa-solid fa-star" onclick="coloraStelle(id)"></i>
+
+          <i id="4" class="fa-solid fa-star" onclick="coloraStelle(id)"></i>
+
+          <i id="5" class="fa-solid fa-star" onclick="coloraStelle(id)"></i>
+
+          <i id="6" class="fa-solid fa-star" onclick="coloraStelle(id)"></i>
+
+          <i id="7" class="fa-solid fa-star" onclick="coloraStelle(id)"></i>
+
+          <i id="8" class="fa-solid fa-star" onclick="coloraStelle(id)"></i>
+
+          <i id="9" class="fa-solid fa-star" onclick="coloraStelle(id)"></i>
+
+          <i id="10" class="fa-solid fa-star" onclick="coloraStelle(id)"></i>
+        </div>
+
+        <h2>Leave us an open feedback about your experience so far</h2>
+
+        <div id="feedbackInputText">
+          <input type="text" placeholder="Write your comment here"/>
+        </div>
+      </main>
+
+      <footer id="footerFeedback">
+        <a href="https://epicode.com/it/" target="_blank"><button type="button">MORE INFO</button></a>
+        <!-- provare a vedere di mandare una mail con un testo del feedback da riceverre (usare mailto:) -->
+      </footer>
+    </div>
+
+    <script src="assets/js/feedback.js"></script>
+  </body>
+</html>

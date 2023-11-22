@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/stylesheet/style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="assets/img/epicode_logo.png" alt="logo" />
+    </header>
+
+    <div id="containerResults">
+      <main>
+        <div id="titleResults">
+          <h1>Results</h1>
+          <p>The summary of your answers:</p>
+        </div>
+        <div id="schemaResults">
+          <!-- risposte corrette, schema centrale, risposte sbagliate -->
+          <div id="rightAnswer">
+            <h3>Correct</h3>
+            <h2 id="percentageRight"></h2>
+            <h6 id="counterQuestions1"></h6>
+          </div>
+
+          <div id="graficoResults">
+            <div class="chartContainer">
+              <canvas id="myChart" width="300" height="50"></canvas>
+            </div>
+
+            <div id="passedExam">
+              <h5>
+                Congratulations!<span><br />You passed the exam.</span>
+              </h5>
+              <h6>
+                We'll send you the certificate in few minutes. Check your email
+                (including promotions / spam folder)
+              </h6>
+            </div>
+
+            <div id="failedExam">
+              <h5>
+                We're sorry!<span><br />You didn't passed the exam.</span>
+              </h5>
+              <h6>
+                You'll discuss your mistakes with your professor, we will contact you soon with the details.
+              </h6>
+            </div>
+          </div>
+          <div id="wrongAnswer">
+            <h3>Wrong</h3>
+            <h2 id="percentageWrong"></h2>
+            <h6 id="counterQuestions2"></h6>
+          </div>
+        </div>
+      </main>
+      <footer id="footerResults">
+        <a href="feedback.html"><button type="button">RATE US</button></a>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="assets/js/results.js"></script>
+  </body>
+</html>
