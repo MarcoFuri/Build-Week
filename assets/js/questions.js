@@ -260,11 +260,11 @@ function nextPage(){
   }
 
   if (indexQuestionChosen.length < questions.length){
-    console.log(rightAnswersSum)
-    console.log(wrongAnswersSum)
+    console.log("Number of correct answers given:", rightAnswersSum)
+    console.log("Number of incorrect answers given:", wrongAnswersSum)
     generateQuiz()
   } else {
-    window.location.href = `results.html?${rightAnswersSum}|${wrongAnswersSum}`;
+    window.location.href = `results.html?${rightAnswersSum}|${wrongAnswersSum}`; // "results.html?4|6"
   }
   
 }

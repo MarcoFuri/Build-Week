@@ -11,10 +11,10 @@ let queryStringArray = queryString.split("|");
 console.log(queryStringArray)
 
 let right = queryStringArray[0]
-console.log(right)
+console.log("Number of correct answers given:", right)
 
 let wrong = queryStringArray[1]
-console.log(wrong)
+console.log("Number of incorrect answers given:", wrong)
 
 
 // creiamo la ciambella 
