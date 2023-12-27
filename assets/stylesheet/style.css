@@ -61,13 +61,15 @@ header > img {
 #footerWelcome {
   margin-top: 2.5rem;
   margin-top: 4rem;
+  display: flex;
+  align-items: center;
 }
 
-#footerWelcome input,
+/* #footerWelcome input,
 #footerWelcome h6,
 #footerWelcome button {
   display: inline-block;
-}
+} */
 
 #footerWelcome input[type="checkbox"] {
   -webkit-appearance: none;
@@ -75,9 +77,10 @@ header > img {
   appearance: none;
   background-color: transparent;
   border: #ebebeb solid 2px;
-  width: 10px;
-  height: 10px;
-  margin-bottom: 0px;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 1.8rem;
+  margin-right: 1rem;
   position: relative;
   accent-color: #ebebeb;
 }
@@ -85,9 +88,9 @@ header > img {
 #footerWelcome input[type="checkbox"]:checked::before {
   content: "";
   display: inline-block;
-  width: 10px;
-  height: 10px;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%2300ff00' d='M5.5 11.6l-3.7-3.7c-.4-.4-.4-1 0-1.4s1-.4 1.4 0l2.3 2.3 6.3-6.3c.4-.4 1-.4 1.4 0s.4 1 0 1.4L6.9 11.6c-.4.4-1 .4-1.4 0z'/%3E%3C/svg%3E");
+  width: 20px;
+  height: 20px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='purple' d='M5.5 11.6l-3.7-3.7c-.4-.4-.4-1 0-1.4s1-.4 1.4 0l2.3 2.3 6.3-6.3c.4-.4 1-.4 1.4 0s.4 1 0 1.4L6.9 11.6c-.4.4-1 .4-1.4 0z'/%3E%3C/svg%3E");
   background-size: contain;
   position: absolute;
   bottom: -2px;
