@@ -3,6 +3,6 @@ function proceedFromWelcome() {
     if (checkbox.checked){
         window.location.href = "./questions.html"
     } else {
-        alert("You need to accept the condition first")
+        alert("Please accept the condition before starting the test!")
     }
 }
